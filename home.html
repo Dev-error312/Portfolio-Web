@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSuyog Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+    crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!--Scroll to top button -->
+    <button class="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/devKarls.png" alt="logo of my website">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Suyog Adhikari</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Beginner Dev</p>
+        <img src="img/img-01.jpg" alt="CLONE X NFT" class="intro__img">
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Programming</h3>
+                <p>I'm a beginner programmer and a web developer, who is still learning about programming here and there. I've learned python and made a game with it. Then I did a crash course in javascript and did some projects. I also learned C-language in high school.</p>
+            </div><!-- /service -->
+            <div class="service">
+                <h3>Video Editing</h3>
+                <p>I've learned the basics of Premiere Pro and used to edit gameplay videos that I play and upload them on my youtube channel. I can do some tricks to make a gameplay video look fun by adding subtitles, VFX and meme templates. If you want some cool contents for your channel, contact me.😉</p>
+            </div><!-- /service -->
+            <div class="service">
+                <h3>PhotoShop</h3>
+                <p>When it comes to photo editing I have somewhat experience with photoshop, I still have many things to learn but I can do some decent editing and get the job done. I can make decent vector arts, thumbnails, logos, etc. If you're searching for someone who can make cool thumbnails, I'm your guy.😄</p>
+            </div><!-- /service -->
+        </div><!-- /services -->
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Beginner Developer learning to make Portfolio</p>
+
+        <div class="about-me__body">
+            <p>A young adult aspiring to secure it’s seat in the skeleton of computer software and web development, a self-taught computer programmer and web developer. Starting from writing a simple code that prints ‘Hello World’ to creating various projects, I’ve found nothing but joy engaging in this workflow. Familiarizing myself into several coding languages like C, Python, HTML, CSS, JavaScript, etc., I’ve learned to appreciate how computing can bring ideas and imagination to the digital world.</p>
+            <p>Having said that, I’m eager and driven with passion to learn abundant of what the world of computer coding has to offer.</p>
+        </div>
+
+        <img src="img/img-02.jpg" alt="another stolen NTF" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">Some Selected Projects</p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="appleProject.html" class="portfolio__item portfolio__item--visible">
+                <img src="img/apple.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="blackJack.html" class="portfolio__item">
+                <img src="img/blackjack.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="trackerLead.html" class="portfolio__item">
+                <img src="img/trackerlead.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 04 -->
+            <a href="calculator.html" class="portfolio__item">
+                <img src="img/calculator.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 05 -->
+            <a href="snakeGame.html" class="portfolio__item">
+                <img src="img/snakegame.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <div class="portfolio__actions">
+                <button id="portfolio__button--prev" aria-label="Previous slide"><</button>
+                <button id="portfolio__button--next" aria-label="Next slide">></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <h1 class="section__title section__title--footer">Contact Me:</h1>
+        <a href="mailto:suyogadhiakri@gmail.com" class="footer__link">
+            <i class="fas fa-envelope"></i> suyogadhiakri@gmail.com
+        </a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/i_karls">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.youtube.com/channel/UC3hFkpuQeU0O5SID3dtgglg">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.twitch.tv/i_am_karls">
+                    <i class="fab fa-twitch"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/i_am_karls/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <h3 class="social-list__home">Back to Home</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

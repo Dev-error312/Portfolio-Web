@@ -68,4 +68,3 @@ function moveToPrevSlide() {
 
     updateSlidePosition();
 }
-
